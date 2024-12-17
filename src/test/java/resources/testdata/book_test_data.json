@@ -1,0 +1,9 @@
+{
+  "validBook":{
+    "bookName": "Thinking in Java",
+    "minimumBooksShouldBeFound": 3,
+    "kindleFormat": "Kindle",
+    "paperbackFormat": "Paperback",
+    "bookAbout": "Java"
+  }
+}
