@@ -3,6 +3,7 @@ package tests.ui;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import utils.BrowserDataStorage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static utils.DriverManager.configureDriver;
@@ -15,6 +16,7 @@ public abstract class BaseTest {
     public void setUp(@Optional("chrome") String browser){
         configureDriver(browser);
         open(baseURL);
+        BrowserDataStorage.clearAllData();
     }
 
 }
