@@ -109,9 +109,7 @@ public class SearchedResultsPage extends BasePage {
     public String getBookFormatsAsString(List<String[]> bookFormats) {
         StringBuilder result = new StringBuilder();
 
-        bookFormats.forEach(bookFormat -> {
-            result.append(Arrays.toString(bookFormat)).append("\n");
-        });
+        bookFormats.forEach(bookFormat -> result.append(Arrays.toString(bookFormat)).append("\n"));
 
         return result.toString();
     }

@@ -4,6 +4,8 @@ import com.codeborne.selenide.Selenide;
 
 public class BrowserDataStorage {
 
+    private BrowserDataStorage(){}
+
     public static void clearCookies() {
         Selenide.clearBrowserCookies();
     }
