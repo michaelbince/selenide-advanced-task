@@ -2,13 +2,14 @@ package tests.ui;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.*;
 import utils.TestDataProvider;
 
 import java.util.List;
 
-
+@Listeners(listeners.ScreenshotListener.class)
 public class BookShoppingTest extends BaseTest {
     private SearchComponentPage searchComponentPage;
     private SearchedResultsPage searchedResultsPage;
