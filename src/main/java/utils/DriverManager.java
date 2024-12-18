@@ -6,7 +6,7 @@ public class DriverManager {
 
     private static final boolean DEFAULT_HEADLESS_MODE = false;
     private static final String DEFAULT_BROWSER_SIZE = "1920x1080";
-    private static final long DEFAULT_TIMEOUT = 5000;
+    private static final long DEFAULT_TIMEOUT = 10000;
 
     private DriverManager() {}
 
